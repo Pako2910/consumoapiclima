@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronóstico del clima</title>
+</head>
+
+<body>
+    <h1>Pronóstico del clima</h1>
+    <div class="search">
+        <div class="search-bar">
+            <p>Introduce el nombre de una ciudad</p>
+            <input type="text" class="search-input" placeholder="" name="search">
+            <button type="submit" class="search-button">
+                Buscar
+            </button>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div class="weather">
+        <div class="card">
+            <span class="city" style="font-size: 2.5em;"></span>
+            <span class="temp" style="font-size: 4.5em;"></span>
+            <br>
+            <span class="description"></span>
+            <br>
+        </div>
+    </div>
+    
+  
+    <div class="forecast">
+        
+        <br>
+
+        <!--DAY 1-->
+        <div class="days day-1">
+            <div class="ftop ftop-1">
+                <h2 class="date"></h2>
+            </div>
+            <div class="fbottom fbottom-1">
+                <div class="ftemp ftemp-1"></div>
+                <br>
+                <div class="fday">
+                    Día
+                    <p class="fday-description"></p>
+                </div>
+                <div class="fnight">
+                    Noche
+                    <p class="fnight-description"></p>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+
+        <!--DAY 2-->
+        <div class="days day-2">
+            <div class="ftop ftop-2">
+                <h2 class="date"></h2>
+            </div>
+            <div class="fbottom fbottom-2">
+                <div class="ftemp ftemp-2"></div>
+                <br>
+                <div class="fday fday-2">
+                    Día
+                    <p class="fday-description"></p>
+                </div>
+                <div class="fnight fnight-2">
+                    Noche
+                    <p class="fnight-description"></p>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+
+        <!--DAY 3-->
+        <div class="days day-3">
+            <div class="ftop">
+                <h2 class="date"></h2>
+            </div>
+            <div class="fbottom fbottom-3">
+                <div class="ftemp ftemp-3"></div>
+                <br>
+                <div class="fday fday-3">
+                    Día
+                    <p class="fday-description"></p>
+                </div>
+                <div class="fnight fnight-3">
+                    Noche
+                    <p class="fnight-description"></p>
+                </div>
+            </div>  
+        </div>
+        
+        <br>
+
+        <!--DAY 4-->
+        <div class="days day-4">
+            <div class="ftop ftop-4">
+                <h2 class="date"></h2>
+            </div>
+            <div class="fbottom fbottom-4">
+                <div class="ftemp ftemp-4"></div>
+                <br>
+                <div class="fday fday-4">
+                    Día
+                    <p class="fday-description"></p>
+                </div>
+                <div class="fnight fnight-4">
+                    Noche
+                    <p class="fnight-description"></p>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+
+        <!--DAY 5-->
+        <div class="days day-5">
+            <div class="ftop ftop-5">
+                <h2 class="date"></h2>
+            </div>
+            <div class="fbottom fbottom-5">
+                <div class="ftemp ftemp-5"></div>
+                <br>
+                <div class="fday fday-5">
+                    Día
+                    <p class="fday-description"></p>
+                </div>
+                <div class="fnight fnight-5">
+                    Noche
+                    <p class="fnight-description"></p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    
+    <script src="script.js" defer></script> 
+</body>
+</html>
