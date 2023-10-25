@@ -11,7 +11,7 @@ let currentWeather = {
         .then((data) => this.displayWeather(data));
     },
 
-    //WEATHER
+    // WEATHER
     displayWeather: function(data) {
         console.log(data);
         const {name} = data;
@@ -19,14 +19,14 @@ let currentWeather = {
         const {temp_min, temp_max} = data.main;
         const {description} = data.weather[0];
 
-    //HTML
+    // HTML
         document.querySelector(".city").innerHTML = name.toUpperCase(2);
         document.querySelector(".temp").innerHTML =  Math.round(temp) + " °C";
         document.querySelector(".description").innerHTML = description;
     },
     
-    //5 DAYS FORECAST
-    forecast_apiKey: "vjGjwTn3T55EcGJt3Q7DaLJ9oe0oIBAe",
+    // 5 DAYS FORECAST
+    forecast_apiKey: "ZVeDIEihI4sC32guBduWu8whzKASthuZ",
 
     fetchForecast: function(city) {
         var location_key;
@@ -43,7 +43,7 @@ let currentWeather = {
         const {DailyForecasts} = data;
         console.log(DailyForecasts);
         
-        //DATE
+        // DATE
         const allftop = document.querySelectorAll(".date");
         let i = 0;
         for (const element of allftop) {
@@ -56,7 +56,7 @@ let currentWeather = {
             i++;
         }
 
-        //MIN_TEMP / MAX_TEMP
+        // MIN_TEMP / MAX_TEMP
         const allftemp = document.querySelectorAll(".ftemp");
         i = 0;
         for (const element of allftemp) {
@@ -67,7 +67,7 @@ let currentWeather = {
             i++;
         }
         
-        //DAY DESCRIPTION
+        // DAY DESCRIPTION
         const alldaydescription = document.querySelectorAll(".fday-description");
         i = 0;
         for(const element of alldaydescription) {
@@ -75,7 +75,7 @@ let currentWeather = {
             element.innerHTML = `<p style="font-size:1.2em">${IconPhrase}</p>`;
             i++;
         }
-        //NIGHT DESCRIPTION
+        // NIGHT DESCRIPTION
         const allnightdescription = document.querySelectorAll(".fnight-description");
         i = 0;
         for(const element of allnightdescription) {
@@ -102,6 +102,6 @@ document.querySelector(".search-button").addEventListener("click", function() {
     currentWeather.search();
 })
 
-// DEFAULT CITYp+´´´´´´´´´´´´´+++k
+// DEFAULT CITY
 currentWeather.fetchWeather("Ciudad del Carmen");
 currentWeather.fetchForecast("Ciudad del Carmen");
